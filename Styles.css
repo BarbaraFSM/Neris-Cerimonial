@@ -6,97 +6,181 @@
 }
 
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Playfair Display', serif;
     color: #333;
+    background-color: #f7f5f2;
     line-height: 1.6;
 }
 
-/* Cabeçalho */
+/* Estilos de cabeçalho */
 header {
-    background: url('background.jpg') no-repeat center center/cover;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+    background: linear-gradient(to bottom, #3d3d3d, #1f1f1f);
+    color: #f1f1f1;
+    padding: 3rem;
     text-align: center;
 }
 
 .header-content h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #d4af37;
+    letter-spacing: 2px;
 }
 
 .header-content p {
-    font-size: 1.5em;
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
 }
 
 /* Navegação */
 nav {
-    background-color: #333;
-    padding: 1em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #2b2b2b;
+    padding: 1rem 0;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 15px;
+    color: #d4af37;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Seção de sobre */
+#sobre {
+    padding: 4rem 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Seção de serviços */
+#servicos {
+    background-color: #f1f1f1;
+    padding: 4rem 10%;
+}
+
+#servicos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #3d3d3d;
+    margin-bottom: 2rem;
+}
+
+.servico {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border-left: 5px solid #d4af37;
+}
+
+.servico h3 {
+    font-size: 1.6rem;
+    color: #3d3d3d;
+}
+
+.servico p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Seção de galeria */
+#galeria {
+    padding: 4rem 10%;
+    background-color: #fff;
+}
+
+#galeria h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #3d3d3d;
+    margin-bottom: 2rem;
+}
+
+.galeria {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Seção de contato */
+#contato {
+    background-color: #f7f5f2;
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    color: #3d3d3d;
+    margin-bottom: 1.5rem;
+}
+
+#contato p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+#contato a {
+    color: #d4af37;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #d4af37;
-}
-
-/* Seções */
-section {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#sobre h2, #servicos h2, #galeria h2, #contato h2 {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#servicos .servico {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-#galeria .galeria {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#galeria .galeria img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* Contato */
-#contato p {
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+#contato a:hover {
+    color: #3d3d3d;
 }
 
 /* Rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #2b2b2b;
+    color: #d4af37;
+    padding: 1.5rem;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
 }
