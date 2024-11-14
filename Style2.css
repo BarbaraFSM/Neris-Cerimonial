@@ -1,0 +1,181 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #f1f1f1;
+    background-color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* Estilos de cabeçalho com imagem de fundo e parallax */
+header {
+    background-image: url('seu_fundo.jpg'); /* Insira o link da sua imagem de fundo */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #f1f1f1;
+    padding: 6rem 3rem;
+    text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #d4af37;
+    letter-spacing: 2px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(43, 43, 43, 0.9);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Seção de sobre com efeito de parallax */
+section {
+    padding: 4rem 10%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#sobre {
+    background-image: url('seu_fundo_sobre.jpg'); /* Imagem de fundo suave */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#sobre h2, #servicos h2, #galeria h2, #contato h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #d4af37;
+    margin-bottom: 2rem;
+}
+
+#sobre p, #servicos p, #contato p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e0e0e0;
+}
+
+/* Seção de serviços */
+#servicos {
+    background-color: transparent;
+    color: #d4af37;
+}
+
+.servico {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border-left: 5px solid #d4af37;
+}
+
+/* Galeria com efeito de imagem em movimento */
+#galeria {
+    background-color: transparent;
+}
+
+.galeria {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* Seção de contato */
+#contato {
+    background-image: url('seu_fundo_contato.jpg'); /* Imagem suave para contato */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 10%;
+}
+
+#contato a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contato a:hover {
+    color: #ffffff;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(43, 43, 43, 0.9);
+    color: #d4af37;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
